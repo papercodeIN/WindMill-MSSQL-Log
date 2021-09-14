@@ -28,7 +28,7 @@ import glob
 
 # Get list of all file from given location
 # Change the folder location from where you want to take last created file from your system
-list_of_files = glob.glob(r"D:\Notebooks\CSV_2_SQL\Files\*")
+list_of_files = glob.glob(r"D:\Notebooks\Windmill\FTP_Files\*")
 # Get name of last created file
 latest_file = max(list_of_files, key=os.path.getctime)
 # Read last created file and convert csv file into Pandas Dataframe
