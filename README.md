@@ -2,9 +2,11 @@
 Used: This code is created to store Individual Wind Trubine Data into MSSQL Server at Interval of 15 Minute.
 
 Note - Interverl is Set into MS Windows Task Scheduler.
+
 Note - Do necessary change before using this code.
 
 Sample CSV Data:
+
 |LocalTime     |Turbine              |WspAvg(m/s)|WindDirAvg(Deg)|NacelPos(Deg)|Power(kW)|SecBrakeActive(s)|SecGridConnection(s)|AmbientTemp(C)|
 |--------------|---------------------|-----------|---------------|-------------|---------|-----------------|--------------------|--------------|
 |20210816110000|SWSMAM-SC1-GAC12-VM79|3.1        |1.4            |273.2        |-1.3     |0                |0                   |28.6          |
