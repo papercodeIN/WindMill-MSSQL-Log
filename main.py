@@ -41,7 +41,10 @@ Unique_Turbine = list(raw_csv.Turbine.unique())
 
 # Run a loop : for each unique turbine 
 for Unique_VM in Unique_Turbine:
-
+    
+    # Split Trubine Name and Extract Code_4 for Windmill Number
+    Code_1,Code_2,Code_3,Code_4 = Unique_VM.split("-")
+    
     # Create new temp dataframe for each Windmill
     rslt_df = raw_csv[raw_csv['Turbine'] == Unique_VM ] 
 
@@ -56,7 +59,7 @@ for Unique_VM in Unique_Turbine:
     cursor = conn.cursor()
     
     # Dump Dataframe data into MSSQL table according to Windmill name
-    rslt_df.to_sql(f'{Unique_VM}', schema='dbo', con = engine, chunksize=650, method='multi', index=False, if_exists='append')
+    rslt_df.to_sql(f'{Code_4}', schema='dbo', con = engine, chunksize=650, method='multi', index=False, if_exists='append')
 
     # Close connection with pyodbc engine
     engine.dispose()
