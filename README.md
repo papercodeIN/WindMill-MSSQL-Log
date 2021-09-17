@@ -1,8 +1,6 @@
-
-Used: This code is created to store Individual Wind Trubine Data into MSSQL Server at Interval of 15 Minute.
+Use of This: This code is created to store Individual Wind Trubine Data into MSSQL Server at Interval of 15 Minute.
 
 Note - Interverl is Set into MS Windows Task Scheduler.
-
 Note - Do necessary change before using this code.
 
 Sample CSV Data:
