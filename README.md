@@ -14,3 +14,8 @@ Sample CSV Data:
 |20210816111000|SWSMAM-SC1-GAC02-VM28|3.3        |-3.6           |224.7        |-4.1     |0                |0                   |31.6          |
 |20210816111000|SWSMAM-SC1-GAC03-VM29|3.2        |-2.1           |212.1        |-1.9     |0                |0                   |32            |
 |20210816111000|SWSMAM-SC1-GAC10-VM30|3.3        |8.4            |218.1        |-1.8     |0                |0                   |31            |
+
+
+MSSQL Databse and Table Result:
+
+![Result Image](https://github.com/papercodeIN/WindMill-MSSQL-Log/blob/main/Result/Result.png)
