@@ -36,6 +36,15 @@ latest_file = max(list_of_files, key=os.path.getctime)
 # Read last created file and convert csv file into Pandas Dataframe
 raw_csv = pd.read_csv(latest_file)
 
+# Rename Columns as per Requirement
+raw_csv.rename(columns = {'WspAvg(m/s)':'WSPAVG', \
+                                    'WindDirAvg(Deg)':'WINDDIR',\
+                                    'NacelPos(Deg)':'NACELPOS',\
+                                    'Power(kW)':'POWER',\
+                                    'SecBrakeActive(s)':'SECBRAKE',\
+                                    'SecGridConnection(s)':'SECGRID',\
+                                    'AmbientTemp(C)':'AMBIENTTEMP'}, inplace = True)
+
 # Find unique turbine list from last created file
 Unique_Turbine = list(raw_csv.Turbine.unique())
 
